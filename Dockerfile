@@ -1,5 +1,6 @@
 FROM python:slim-bullseye as dependencies
-ARG APP_DIR=weather_app
+ARG APP_DIR=py_weather_app
+EXPOSE 8000
 
 RUN mkdir -p ${APP_DIR}
 WORKDIR ${APP_DIR}
