@@ -10,4 +10,4 @@ RUN python3 -m venv env && . env/bin/activate
 RUN pip3 install -r requirements.txt
 ADD src src
 
-CMD python3 src/main.py
+CMD uvicorn src.main:app --host 0.0.0.0
